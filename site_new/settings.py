@@ -32,7 +32,11 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
+MIDDLEWARE_CLASSES = (
+    # Simplified static file serving.
+    # https://warehouse.python.org/project/whitenoise/
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+)
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
