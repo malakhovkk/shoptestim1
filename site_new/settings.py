@@ -37,6 +37,9 @@ MIDDLEWARE_CLASSES = (
     # https://warehouse.python.org/project/whitenoise/
     'whitenoise.middleware.WhiteNoiseMiddleware',
 )
+
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
