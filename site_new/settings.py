@@ -30,13 +30,13 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+##STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Application definition
-MIDDLEWARE_CLASSES = (
-    # Simplified static file serving.
-    # https://warehouse.python.org/project/whitenoise/
-    'whitenoise.middleware.WhiteNoiseMiddleware',
-)
+#MIDDLEWARE_CLASSES = (
+#    # Simplified static file serving.
+#    # https://warehouse.python.org/project/whitenoise/
+##    'whitenoise.middleware.WhiteNoiseMiddleware',
+#)
 
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
