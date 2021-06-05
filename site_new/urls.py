@@ -19,5 +19,6 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('mine/', views.MyView.as_view(), name='my-view')
+    path('mine/', views.MyView.as_view(), name='my-view'),
+    path('try/', views.TableView.as_view(), name='table-view')
 ]

@@ -7,6 +7,8 @@ from django.http import HttpResponseRedirect
 from .forms import ProductsForm
 
 from .models import Products
+import django_tables2 as tables
+from .table_test import SimpleTable
 
 class MyView(View):
     def get(self, request, *args, **kwargs):
@@ -26,3 +28,9 @@ class MyView(View):
         all_ = Products.objects.all()
         return render(request, "try.html", context={'x':all_})
 
+
+
+class TableView(tables.SingleTableView):
+    table_class = SimpleTable
+    queryset = Products.objects.all()
+    template_name = "simple_list.html"

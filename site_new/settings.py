@@ -48,7 +48,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
-    'site_new'
+    "django_tables2",
+    'site_new',
+
 ]
 
 SITE_ID = 1
