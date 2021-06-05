@@ -6,3 +6,18 @@
     {{i.uid}}</div>
     </br>
 {% endfor %}
+<form action='/mine/' method='post'>
+{% csrf_token %}
+    id:
+    <input name='id' />     <br>
+    Имя:
+    <input name='origname' />
+    <br>
+    Код:
+     <input name='code' />
+     <br>
+     UID:
+      <input name='uid' />
+    <br>
+      <input type="submit" value="Send Request">
+</form>
