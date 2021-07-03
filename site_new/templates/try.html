@@ -1,10 +1,11 @@
 
 {% for i in x %}
-    <div>{{i.id}} 
-    {{i.origname}}
-    {{i.code}}
-    {{i.uid}}</div>
+<h1> >> {{i.category }}</h1>
+  {% for el in i.names %}
+    <div style="margin-left:50px">{{el}}
+    </div>
     </br>
+  {% endfor %}
 {% endfor %}
 <form action='/mine/' method='post'>
 {% csrf_token %}

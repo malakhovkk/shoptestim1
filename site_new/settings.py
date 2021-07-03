@@ -49,8 +49,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     "django_tables2",
-    'site_new',
-
+    "site_new",
+    "api",
+    "rest_framework"
 ]
 
 SITE_ID = 1
